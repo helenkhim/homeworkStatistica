@@ -10,14 +10,7 @@ public class StatsService {
     }
 
     public int averageSum(int[] purchases) {
-        int months = 12;
-        int sum = 0;
-        int average = 0;
-        for (int purchase : purchases) {
-            sum += purchase;
-            average = sum / months;
-        }
-        return average;
+        return (calculateSum(purchases) / purchases.length);
     }
 
     public int maxMonth(int[] purchases) {
